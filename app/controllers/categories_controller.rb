@@ -8,4 +8,13 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def show
+    @category = Category.find(params[:id])
+
+    respond_to do |f|
+      f.html
+      f.json { render json: {category: @category, games: @category.games} }
+    end
+  end
+
 end
