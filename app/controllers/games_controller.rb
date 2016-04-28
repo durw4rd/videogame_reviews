@@ -12,6 +12,11 @@ class GamesController < ApplicationController
 
   def show
     @game = @category.games.find(params[:id])
+
+    respond_to do |format|
+      format.html
+      format.json { render json: { category: @category, game: @game } }
+    end
   end
 
   # def create
