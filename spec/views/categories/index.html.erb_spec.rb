@@ -12,6 +12,8 @@ RSpec.describe "categories/index.html.erb", type: :view do
   end
 
   it "renders all the categories" do
+    assert_select "div.category", count: categories.count
+
     categories.each do |category|
       assert_select "h3", text: category.name, count: 1
     end
