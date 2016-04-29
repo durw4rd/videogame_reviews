@@ -36,16 +36,16 @@ puts "finished seeding #{User.count} users!"
 
 print "Seeding reviews..."
 
-Review.create( title: "Cool game", review: "This is a very cool game.", user: alan, game: tank_batalion )
-Review.create( title: "Bad game", review: "This is a very bad game.", user: alan, game: age_of_empires )
-Review.create( title: "Mediocre game", review: "This is a very mediocre game.", user: alan, game: mortal_combat )
-Review.create( title: "Dont play this one", review: "Not worth playing at all!", user: bart, game: galaga )
-Review.create( title: "Blah", review: "This is completely useless review...", user: bart, game: pacman )
-Review.create( title: "Didnt play this one", review: "Submitted the review by mistake!", user: bart, game: frogger )
-Review.create( title: "My favorite", review: "Recommended by all means!!!", user: bart, game: need_for_speed )
-Review.create( title: "For kids", review: "Dont play it unless youre a kid.", user: cecile, game: fight_the_monkey )
-Review.create( title: "Boring", review: "This is a very boring game.", user: cecile, game: settlers )
-Review.create( title: "Fun game", review: "This is a very funny game.", user: cecile, game: rifugio )
-Review.create( title: "Not a game", review: "This is not a game.", user: cecile, game: risk )
+Review.create( title: "Cool game", review: "This is a very cool game.", game: tank_batalion )
+Review.create( title: "Bad game", review: "This is a very bad game.", game: age_of_empires )
+Review.create( title: "Mediocre game", review: "This is a very mediocre game.", game: mortal_combat )
+Review.create( title: "Dont play this one", review: "Not worth playing at all!", game: galaga )
+Review.create( title: "Blah", review: "This is completely useless review...", game: pacman )
+Review.create( title: "Didnt play this one", review: "Submitted the review by mistake!", game: frogger )
+Review.create( title: "My favorite", review: "Recommended by all means!!!", game: need_for_speed )
+Review.create( title: "For kids", review: "Dont play it unless youre a kid.", game: fight_the_monkey )
+Review.create( title: "Boring", review: "This is a very boring game.", game: settlers )
+Review.create( title: "Fun game", review: "This is a very funny game.", game: rifugio )
+Review.create( title: "Not a game", review: "This is not a game.", game: risk )
 
 puts "finished seeding #{Review.count} reviews!"
